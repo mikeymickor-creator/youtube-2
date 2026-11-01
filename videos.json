@@ -1,0 +1,82 @@
+{
+  "videos": [
+    {
+      "id": "sample-1",
+      "title": "A little flower video",
+      "channel": "Sample Creator",
+      "category": "Education",
+      "views": "1.2K views",
+      "age": "2 days ago",
+      "duration": "0:05",
+      "description": "A short sample video used to demonstrate the YouTube 2 player. Replace this entry with your own video details.",
+      "thumbnail": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "1.4K subscribers"
+    },
+    {
+      "id": "sample-2",
+      "title": "Beautiful nature and scenery",
+      "channel": "Nature Corner",
+      "category": "Entertainment",
+      "views": "8.4K views",
+      "age": "1 week ago",
+      "duration": "0:10",
+      "description": "A sample nature clip. This is placeholder content for your video website.",
+      "thumbnail": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "12K subscribers"
+    },
+    {
+      "id": "sample-3",
+      "title": "Creative ideas and inspiration",
+      "channel": "Creative Space",
+      "category": "Animation",
+      "views": "3.1K views",
+      "age": "3 weeks ago",
+      "duration": "0:05",
+      "description": "Use this card as a template when adding your own videos to videos.json.",
+      "thumbnail": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "980 subscribers"
+    },
+    {
+      "id": "sample-4",
+      "title": "Gaming setup tour",
+      "channel": "Pixel Player",
+      "category": "Gaming",
+      "views": "15K views",
+      "age": "4 days ago",
+      "duration": "0:05",
+      "description": "A placeholder gaming video card. Change the title, thumbnail, channel, and videoUrl in videos.json.",
+      "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "5.2K subscribers"
+    },
+    {
+      "id": "sample-5",
+      "title": "Music studio vibes",
+      "channel": "Sound Lab",
+      "category": "Music",
+      "views": "22K views",
+      "age": "6 days ago",
+      "duration": "0:05",
+      "description": "A sample music-category card. Add a video file URL that your browser can play.",
+      "thumbnail": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "9K subscribers"
+    },
+    {
+      "id": "sample-6",
+      "title": "Technology of tomorrow",
+      "channel": "Tech Today",
+      "category": "Technology",
+      "views": "6.7K views",
+      "age": "2 weeks ago",
+      "duration": "0:05",
+      "description": "A sample technology video. The example clips are placeholders, not real channel uploads.",
+      "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+      "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "subscribers": "2.8K subscribers"
+    }
+  ]
+}

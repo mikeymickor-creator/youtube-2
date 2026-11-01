@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YouTube 2 — videos for everyone.">
+  <title>YouTube 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-button menu-button" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <a class="brand" href="#" id="brandHome" aria-label="YouTube 2 home">
+      <span class="brand-mark">▶</span><span>YouTube <b>2</b></span>
+    </a>
+    <form class="search-form" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search" autocomplete="off" aria-label="Search videos">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+    <div class="top-actions">
+      <button class="upload-button" id="uploadOpen">＋ <span>Create</span></button>
+      <div class="avatar" title="Your account">Y</div>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <a class="nav-item active" href="#" data-filter="All"><span>⌂</span> Home</a>
+      <a class="nav-item" href="#" data-filter="Shorts"><span>▣</span> Shorts</a>
+      <a class="nav-item" href="#" data-filter="Subscriptions"><span>▤</span> Subscriptions</a>
+      <hr>
+      <div class="nav-heading">You <span>›</span></div>
+      <a class="nav-item" href="#" data-filter="History"><span>◷</span> History</a>
+      <a class="nav-item" href="#" data-filter="Liked videos"><span>♡</span> Liked videos</a>
+      <hr>
+      <p class="sidebar-note">Explore videos from different creators. This demo uses sample videos.</p>
+    </nav>
+  </aside>
+
+  <main class="main-content" id="mainContent">
+    <div class="category-row" id="categoryRow">
+      <button class="chip selected" data-category="All">All</button>
+      <button class="chip" data-category="Music">Music</button>
+      <button class="chip" data-category="Gaming">Gaming</button>
+      <button class="chip" data-category="Animation">Animation</button>
+      <button class="chip" data-category="Entertainment">Entertainment</button>
+      <button class="chip" data-category="Education">Education</button>
+      <button class="chip" data-category="Technology">Technology</button>
+    </div>
+
+    <section class="watch-section hidden" id="watchSection">
+      <button class="back-button" id="backToVideos">← Back to videos</button>
+      <div class="watch-layout">
+        <div class="watch-main">
+          <video id="mainPlayer" controls playsinline></video>
+          <h1 id="watchTitle"></h1>
+          <div class="watch-meta">
+            <div class="channel-avatar" id="watchAvatar">C</div>
+            <div class="channel-info"><strong id="watchChannel"></strong><small id="watchSubscribers">Creator</small></div>
+            <button class="subscribe-button" id="subscribeButton">Subscribe</button>
+            <button class="like-button" id="watchLike">♡ <span>Like</span></button>
+          </div>
+          <div class="description" id="watchDescription"></div>
+        </div>
+        <div class="watch-side" id="watchSide"></div>
+      </div>
+    </section>
+
+    <section id="homeSection">
+      <div class="section-heading"><h1>Recommended</h1><span id="videoCount"></span></div>
+      <div class="video-grid" id="videoGrid"></div>
+      <div class="empty-state hidden" id="emptyState">No videos found. Try another search.</div>
+    </section>
+    <footer>© 2026 YouTube 2 · A fan-made demo project. Not affiliated with YouTube or Google.</footer>
+  </main>
+
+  <dialog id="uploadDialog" class="upload-dialog">
+    <form id="uploadForm" method="dialog">
+      <div class="dialog-heading"><h2>Add a video</h2><button type="button" class="close-button" id="uploadClose">×</button></div>
+      <p class="dialog-help">Add a video from your computer. It will appear in this page during this session only.</p>
+      <label>Video title<input id="newTitle" required maxlength="100" placeholder="Give your video a title"></label>
+      <label>Channel name<input id="newChannel" required maxlength="50" placeholder="Your channel"></label>
+      <label>Category
+        <select id="newCategory"><option>Entertainment</option><option>Music</option><option>Gaming</option><option>Animation</option><option>Education</option><option>Technology</option></select>
+      </label>
+      <label>Choose video file<input id="newVideo" type="file" accept="video/*" required></label>
+      <label>Thumbnail image (optional)<input id="newThumbnail" type="file" accept="image/*"></label>
+      <div class="dialog-actions"><button type="button" class="cancel-button" id="uploadCancel">Cancel</button><button type="submit" class="primary-button">Add video</button></div>
+    </form>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videoFeed>
+  <description>Optional XML video feed for YouTube 2. The starter website loads its main video cards from videos.json.</description>
+  <categories>
+    <category id="music">Music</category>
+    <category id="gaming">Gaming</category>
+    <category id="animation">Animation</category>
+    <category id="entertainment">Entertainment</category>
+    <category id="education">Education</category>
+    <category id="technology">Technology</category>
+  </categories>
+</videoFeed>
